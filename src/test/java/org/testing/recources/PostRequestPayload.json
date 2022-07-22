@@ -1,0 +1,19 @@
+{
+	"Type": "Student",
+	"id": "{{id}}",
+	"Info": 
+	[
+	
+	{
+		"Name": "kaali",
+		"Age": "30",
+		"HomeTown": "HP"
+	}, 
+	
+	{
+		"School": "denali",
+		"Age": "31",
+		"HomeTown": "SL"
+	}
+	]
+}

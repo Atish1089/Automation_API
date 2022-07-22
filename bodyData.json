@@ -1,0 +1,86 @@
+{
+  "SchoolName": [
+    {
+      "Type": "Studen",
+      "ClassID": "A",
+      "Info": [
+        {
+          "School": "Adarsh",
+          "Age": "30",
+          "HomeTown": "HP"
+        },
+        {
+          "School": "Dashanun",
+          "Age": "31",
+          "HomeTown": "SL"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "Type": "Student",
+      "ClassID": "A",
+      "Info": [
+        {
+          "School": "Parvesh",
+          "Age": "30",
+          "HomeTown": "HP"
+        },
+        {
+          "School": "Namrita",
+          "Age": "31",
+          "HomeTown": "SL"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "Position": "SSE-1",
+      "id": "002",
+      "Profile": {
+        "skills": "API-Testing",
+        "Field": "Engg.",
+        "exp.": "2 Years"
+      },
+      "Name": "Namrita",
+      "Seat Number": "L2-B-168",
+      "Manager Name": "Himanshu Sharma"
+    },
+    {
+      "Position": "SSE-1",
+      "id": "001",
+      "Profile": {
+        "skills": "API-Testing",
+        "Field": "Engg.",
+        "exp.": "3 Years"
+      },
+      "Name": "Atish",
+      "Seat Number": "L2-B-167",
+      "Manager Name": "Himanshu Sharma"
+    },
+    {
+      "Position": "SSE-1",
+      "id": "003",
+      "Profile": {
+        "skills": "API-Testing",
+        "Field": "Engg.",
+        "exp.": "2 Years"
+      },
+      "Name": "Namrita",
+      "Seat Number": "L2-B-168",
+      "Manager Name": "Himanshu Sharma"
+    },
+    {
+      "Position": "SSE-1",
+      "id": "004",
+      "Profile": {
+        "skills": "API-Testing",
+        "Field": "Engg.",
+        "exp.": "2 Years"
+      },
+      "Name": "Namrita",
+      "Seat Number": "L2-B-168",
+      "Manager Name": "Himanshu Sharma"
+    }
+  ]
+}
