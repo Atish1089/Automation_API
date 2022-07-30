@@ -7,24 +7,17 @@ import org.testing.TestSteps.HttpMethod;
 import org.testing.utilities.PropertiesHandle;
 import org.testng.annotations.Test;
 
-public class TestCase_2 {
+public class TestCase_5 {
 
-	
-	@Test(priority=2)
-	public void getAll() throws IOException
+	@Test(priority=6)
+	public void removerRecord() throws IOException
 	{
 		Properties pro = PropertiesHandle.loadProperties("../Automation_API/src/test/java/org/testing/recources/URI.properties");
-		HttpMethod http = new HttpMethod(pro);
-		http.getAll("QA_URI");
+	     HttpMethod hp = new HttpMethod(pro);
+		 hp.removeRecordAsPerId("QA_URI", TestCase_1.idToBeFetchedValue);
+	     System.out.println("Removed Record after executing Test Case 5 is "+" "+ TestCase_1.idToBeFetchedValue);
 		
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

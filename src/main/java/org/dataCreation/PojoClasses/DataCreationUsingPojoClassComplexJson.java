@@ -2,15 +2,22 @@ package org.dataCreation.PojoClasses;
 
 import static io.restassured.RestAssured.given;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 import org.PojoObjects.PojoClass.AddressInfo;
 import org.PojoObjects.PojoClass.BasicInfo;
 import org.PojoObjects.PojoClass.Education;
+import org.json.JSONObject;
+import org.json.JSONTokener;
+import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class DataCreationUsingPojoClassComplexJson {
-
+	
 	public void candidateInformation (){
     
 	AddressInfo address = new AddressInfo();

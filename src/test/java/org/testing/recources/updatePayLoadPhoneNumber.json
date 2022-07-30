@@ -1,12 +1,12 @@
 {
 	"Type": "Student",
 	"id": "{{id}}",
-	"phone": "{{phone}}"
+	"phone": "{{phone}}",
 	"Info": 
 	[
 	
 	{
-		"Name": "kaali",
+		"Name": "{{Name}}",
 		"Age": "30",
 		"HomeTown": "HP"
 		
