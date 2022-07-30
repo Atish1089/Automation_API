@@ -37,7 +37,7 @@ public class TestCase_1 {
 		bodyData=VariableReplacement.replaceVariable(bodyData, "id", idValue);
 		Response res = hp.postRequestReturnsResponse(bodyData, "QA_URI");
 		idToBeFetchedValue= JsonParsingUsingOrgJson.jsonParsing(res.asString(), "id"); 
-		
+		System.out.println(idToBeFetchedValue);
 		
 	}
 	
