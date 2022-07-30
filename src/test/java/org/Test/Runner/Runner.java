@@ -29,7 +29,7 @@ public class Runner {
         testCase4.updateRecord();
         System.out.println("----------------------------Test Case 5------------------------");
         testCase5.removerRecord();
-        
+        System.out.println("----------------------------Test Case 5------------------------");
         
     }
 
