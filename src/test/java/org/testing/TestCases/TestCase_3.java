@@ -18,7 +18,7 @@ public class TestCase_3 {
         hp.getValueAsPerKey("QA_URI", TestCase_1.idToBeFetchedValue);
 
     }
-    @Test(priority=4)
+    
     public void getAllValues() throws IOException {
     	System.out.println("----------------------------Test Case 4------------------------");
         Properties pro = PropertiesHandle.loadProperties("../Automation_API/src/test/java/org/testing/recources/URI.properties");
