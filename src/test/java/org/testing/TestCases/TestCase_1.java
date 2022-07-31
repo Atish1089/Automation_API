@@ -3,6 +3,7 @@ package org.testing.TestCases;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.testing.TestSteps.HttpMethod;
 import org.testing.utilities.GenerateRandomNumber;
 import org.testing.utilities.JsonFileRead;
@@ -35,6 +36,7 @@ public class TestCase_1 {
 		String bodyData= JsonFileRead.readJsonFile("../Automation_API/src/test/java/org/testing/recources/updatePayLoadPhoneNumber.json");
 		String idValue = GenerateRandomNumber.randonNumber(6);
 		bodyData=VariableReplacement.replaceVariable(bodyData, "id", idValue);
+		bodyData = VariableReplacement.replaceVariable(bodyData, "Name", "JaggaReddy"+ RandomStringUtils.randomAlphabetic(10));
 		Response res = hp.postRequestReturnsResponse(bodyData, "QA_URI");
 		idToBeFetchedValue= JsonParsingUsingOrgJson.jsonParsing(res.asString(), "id"); 
 		
