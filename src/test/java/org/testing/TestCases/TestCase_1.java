@@ -29,7 +29,7 @@ public class TestCase_1 {
 	
 	@Test(priority=1)
      public  void postMethodwithPermeterizedId() throws IOException {
-		
+		System.out.println("----------------------------Test Case 1------------------------");
 		Properties pro= PropertiesHandle.loadProperties("../Automation_API/src/test/java/org/testing/recources/URI.properties");
 		HttpMethod hp = new HttpMethod(pro);
 		String bodyData= JsonFileRead.readJsonFile("../Automation_API/src/test/java/org/testing/recources/updatePayLoadPhoneNumber.json");

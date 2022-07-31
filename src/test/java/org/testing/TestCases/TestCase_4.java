@@ -20,6 +20,7 @@ public class TestCase_4 {
 	@Test(priority=5)
 	public void updateRecord() throws IOException
 	{
+		System.out.println("----------------------------Test Case 5------------------------");
 		 Properties pro = PropertiesHandle.loadProperties("../Automation_API/src/test/java/org/testing/recources/URI.properties");
 	     HttpMethod hp = new HttpMethod(pro);
 	     String bodyData= JsonFileRead.readJsonFile("../Automation_API/src/test/java/org/testing/recources/updatePayLoadPhoneNumber.json");		 

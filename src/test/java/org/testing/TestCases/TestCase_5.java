@@ -12,6 +12,7 @@ public class TestCase_5 {
 	@Test(priority=6)
 	public void removerRecord() throws IOException
 	{
+		System.out.println("----------------------------Test Case 6------------------------");
 		Properties pro = PropertiesHandle.loadProperties("../Automation_API/src/test/java/org/testing/recources/URI.properties");
 	     HttpMethod hp = new HttpMethod(pro);
 		 hp.removeRecordAsPerId("QA_URI", TestCase_1.idToBeFetchedValue);
