@@ -16,8 +16,8 @@ public class HttpMethod {
     }
 
     public void post(String bodyData, String uriKey) {
-        given().contentType(ContentType.JSON).body(bodyData).when().post(pro.getProperty(uriKey));
-        //System.out.println(Res.asString());
+       Response res=  given().contentType(ContentType.JSON).body(bodyData).when().post(pro.getProperty(uriKey));
+        System.out.println(res.asString());
     }
     
     public void getAll(String uriKey) {
@@ -32,6 +32,14 @@ public class HttpMethod {
         Response Res = given().contentType(ContentType.JSON).body(bodyData).when().post(pro.getProperty(uriKey));
         System.out.println(Res.asString());
        return Res;
+    }
+    
+    public String postRequestReturnsString(String bodyData, String uriKey)
+
+    {
+        Response Res = given().contentType(ContentType.JSON).body(bodyData).when().post(pro.getProperty(uriKey));
+        System.out.println(Res.asString());
+       return Res.asString();
     }
 
     public void getValueAsPerKey(String uriKey, String id) {
